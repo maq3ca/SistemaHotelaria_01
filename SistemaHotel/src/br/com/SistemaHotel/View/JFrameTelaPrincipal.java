@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package br.com.SistemaHotel.View;
+import javax.swing.ImageIcon;
+
 
 /**
  *
@@ -16,6 +18,9 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
      */
     public JFrameTelaPrincipal() {
         initComponents();
+        
+        
+       
     }
 
     /**
@@ -64,6 +69,7 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela Principal");
+        setIconImage(new ImageIcon(getClass().getResource("/br/com/SistemaHotel/Imagem/frame.png")).getImage());
         setResizable(false);
 
         jMenu1.setText("Cadastros   |");
@@ -264,4 +270,5 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenuSair;
     private javax.swing.JMenu jMenuVendasProdutos;
     // End of variables declaration//GEN-END:variables
-}
+
+  }
