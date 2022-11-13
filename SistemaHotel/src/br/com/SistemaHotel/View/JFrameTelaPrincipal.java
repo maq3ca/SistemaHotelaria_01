@@ -38,6 +38,11 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jPanel2 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu9 = new javax.swing.JMenu();
@@ -87,11 +92,49 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
         jMenuFerramentasSobreSistema = new javax.swing.JMenu();
         jMenuSair = new javax.swing.JMenu();
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/SistemaHotel/Imagem/Hotel-256.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela Principal");
         setBackground(new java.awt.Color(255, 255, 255));
         setIconImage(new ImageIcon(getClass().getResource("/br/com/SistemaHotel/Imagem/frame.png")).getImage());
         setResizable(false);
+
+        jLabel1.setText("Sistema Hotel - Desenvolvido por Ricardo Marques - todos os direitos reservado - 2022 ");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(273, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap(282, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        jSeparator1.setBackground(new java.awt.Color(255, 0, 0));
+        jSeparator1.setForeground(new java.awt.Color(255, 0, 0));
+
+        jPanel2.setPreferredSize(new java.awt.Dimension(132, 300));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 174, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 284, Short.MAX_VALUE)
+        );
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/SistemaHotel/Imagem/Report-Edit-32.png"))); // NOI18N
         jMenu1.setText("Cadastros   |");
@@ -119,6 +162,7 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.add(jMenu10);
 
+        jMenu11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/SistemaHotel/Imagem/Red-Stripes-Tie-32.png"))); // NOI18N
         jMenu11.setText("Funcionarios");
 
         jMenuItemCadCadastrarFunc.setText("Cadastrar");
@@ -129,6 +173,7 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.add(jMenu11);
 
+        jMenu12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/SistemaHotel/Imagem/User-32 (2).png"))); // NOI18N
         jMenu12.setText("Fornecedores");
 
         jMenuItemCadCadastrarFornec.setText("Cadastrar");
@@ -139,6 +184,7 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.add(jMenu12);
 
+        jMenu13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/SistemaHotel/Imagem/Shopcart_32.png"))); // NOI18N
         jMenu13.setText("Produtos");
 
         jMenuItemCadCadastrarProd.setText("Cadastrar");
@@ -149,6 +195,7 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
 
         jMenu1.add(jMenu13);
 
+        jMenu14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/SistemaHotel/Imagem/Services_32.png"))); // NOI18N
         jMenu14.setText("Serviços");
 
         jMenuItemCadCadastrarServ.setText("Cadastrar");
@@ -273,14 +320,25 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 832, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jSeparator1)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 393, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 284, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
-        setSize(new java.awt.Dimension(848, 471));
+        setSize(new java.awt.Dimension(1029, 437));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -320,6 +378,8 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
@@ -368,6 +428,9 @@ public class JFrameTelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenuSegurancaRestaurarBackup;
     private javax.swing.JMenu jMenuSewgurancaFazerBackup;
     private javax.swing.JMenu jMenuVendasProdutos;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 
   }
